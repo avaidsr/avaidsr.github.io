@@ -14,6 +14,7 @@
             console.log('Geolocation is not supported');
         }
 }
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 
 function errorCallback() {}
 
@@ -21,7 +22,7 @@ function successCallback(position) {
       var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var map_options = {
         zoom: 15,
-        center: myLatlng,
+        center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
         mapTypeId: google.maps.MapTypeId.ROADMAP
       }
      map_container = document.getElementById('map');
@@ -31,7 +32,6 @@ function successCallback(position) {
 </head>
 <body onload="javascript:initGeolocation()">
 <div id="map">
-   <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 </div>
 </body>
 </html>
