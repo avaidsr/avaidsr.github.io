@@ -18,11 +18,14 @@
 function errorCallback() {}
 
 function successCallback(position) {
-      var mapUrl = "http://maps.google.com/maps/api/staticmap?center=";
-      mapUrl = mapUrl + position.coords.latitude + ',' + position.coords.longitude;
-      mapUrl = mapUrl + '&zoom=15&size=512x512&maptype=roadmap&sensor=false';
-      var imgElement = document.getElementById("static-map");
-      imgElement.src = mapUrl;
+      var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+      var map_options = {
+        zoom: 15,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+     map_container = document.getElementById('map');
+     var map = new google.maps.Map(map_container, map_options);
     }
 </script>
 </head>
