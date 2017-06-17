@@ -14,7 +14,6 @@
             console.log('Geolocation is not supported');
         }
 }
-<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 
 function errorCallback() {}
 
@@ -32,6 +31,7 @@ function successCallback(position) {
 </head>
 <body onload="javascript:initGeolocation()">
 <div id="map">
+   <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 </div>
 </body>
 </html>
