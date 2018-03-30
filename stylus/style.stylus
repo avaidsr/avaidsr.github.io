@@ -1,0 +1,97 @@
+// variables
+        $primary = #37ca7e
+      $secondary = #43a6dd
+$transitionSpeed = 0.4s
+
+// Lato font
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+// basic styles
+body
+  font-family 'Lato', Arial, sans-serif
+  color #6b6b6b
+  font-size 17px
+  line-height 1.6
+    
+.hero
+  position relative
+  height 60vh
+  z-index -2
+  background url('https://unsplash.it/2000/800?image=563') center top / cover no-repeat
+  
+.overlay
+  position absolute
+  z-index -1
+  top 0
+  left 0
+  height 100%
+  width 100%
+  background rgba(#000, 0.6)
+
+.main-content
+  background #f2f2f2
+
+section
+  background white
+  padding 4rem 0 7rem
+  
+  // zebra striping the sections
+  &:nth-child(even)
+    background darken(white, 4)
+
+h2, h3
+  padding 2rem 0 .75rem
+  font-weight 700
+  color #4b4b4b
+
+  
+/* ===================================== */
+/* ===== THE INTERESTING STUFF NOW ===== */
+/* ===================================== */
+
+.navbar
+  border none
+  transition $transitionSpeed
+  
+  &-brand
+    font-size 2.25rem
+    font-weight 900
+    color #4b4b4b
+
+  /* --- navbar sizes --- */  
+  &--size
+    
+    &--xl
+      padding 4rem 0
+      
+    &--lg
+      padding 2rem 0
+    
+    &--md
+      padding 1rem 0
+      
+    &--sm
+      padding 0
+      
+  
+  /* --- navbar colors --- */
+  &--color
+    
+    &--white
+      background white
+      
+    &--primary
+      background $primary
+      
+    &--secondary
+      background $secondary
+      
+    &--ghost
+      background rgba(0,0,0,0.2)
+      
+      .navbar-brand,
+      .navbar-text,
+      a 
+        color white        
+      
+      
