@@ -1,113 +1,141 @@
-/* *********************************
-           Variables
-  ********************************** */
-
-
-/* *********************************
-   Some Style Overrides on Bootstrap
-  ********************************** */
-
-.navbar-inverse {
-    background: rgba(62, 195, 246, 0);
-    border-bottom: none;
+/* VARIABLES */
+/* BASE */
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-inverse .navbar-toggle {
-    border: 1px solid #333;
-    border-color: rgba(255, 255, 255, 0.7);
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-    border-color: transparent;
+.container {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 20px;
 }
 
-@media (max-width: 767px) {
-    .navbar-inverse .navbar-collapse,
-    .navbar-inverse .navbar-form {
-        background: rgba(255, 255, 255, 0.75);
-    }
+.site-content {
+  padding-top: 66px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: black;
+/* HEADER */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 66px;
+  line-height: 66px;
+  color: #fff;
+  background-color: #3f51b5;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-    color: #22F;
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: left;
 }
 
+/* MENU */
+.menu {
+  float: left;
+}
+.menu a {
+  padding: 0 10px;
+}
+.menu a:hover {
+  color: #c5cae9;
+}
 
-/* *********************************
-           Toolbar Logo
-  ********************************** */
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  .site-pusher,
+  .site-container {
+    height: 100%;
+  }
 
-.small-logo-container {
-    padding-top: 50px;
-    height: 50px;
+  .site-container {
     overflow: hidden;
+  }
+
+  .site-pusher {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  .site-content {
     position: absolute;
-}
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 
-.small-logo {
-    color: white;
-    font-size: 2.5em;
-    padding-bottom: 2px;
-}
+  .header {
+    position: static;
+  }
 
+  .header__icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 66px;
+    cursor: pointer;
+  }
+  .header__icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    -webkit-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+  }
 
-/* *********************************
-           Big Logo
-  ********************************** */
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #3849a2;
+    /*    overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;*/
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #3f51b5;
+  }
 
-.big-logo-row {
-    background: gold;
-}
-
-.big-logo-row .big-logo-container {
-    padding-top: 50px;
-}
-
-.big-logo-row h1 {
-    font-size: 4em;
-    margin: 0;
-    padding: 0 0 15px 0;
-}
-
-@media (min-width: 400px) {
-    .big-logo-row h1 {
-        font-size: 4.5em;
-    }
-}
-
-@media (min-width: 440px) {
-    .big-logo-row h1 {
-        font-size: 5.5em;
-    }
-}
-
-@media (min-width: 500px) {
-    .big-logo-row h1 {
-        font-size: 6.5em;
-    }
-}
-
-@media (min-width: 630px) {
-    .big-logo-row h1 {
-        font-size: 7.5em;
-    }
-}
-
-@media (min-width: 768px) {
-    .big-logo-row h1 {
-        font-size: 9em;
-        padding-bottom: 30px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .big-logo-row h1 {
-        font-size: 12em;
-    }
+  .with--sidebar .site-pusher {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
