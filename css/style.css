@@ -1,105 +1,94 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-body {
-    font-family: 'Lato', Arial, sans-serif;
-    color: #6b6b6b;
-    font-size: 17px;
-    line-height: 1.6;
+/* *********************************
+           Variables
+  ********************************** */
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+.navbar-inverse {
+  background: rgba(62, 195, 246, 0);
+  border-bottom: none;
 }
 
-.hero {
-    position: relative;
-    height: 60vh;
-    z-index: -2;
-    background: url("https://unsplash.it/2000/800?image=563") center top/cover no-repeat;
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
-.overlay {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6S);
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background: rgba(255, 255, 255, 0.75);
+  }
 }
 
-.main-content {
-    background: #f2f2f2;
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
 }
 
-section {
-    background: #fff;
-    padding: 4rem 0 7rem;
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #22F;
 }
 
-section:nth-child(even) {
-    background: #f5f5f5;
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+  padding-top: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
 }
 
-h2,
-h3 {
-    padding: 2rem 0 0.75rem;
-    font-weight: 700;
-    color: #4b4b4b;
+.small-logo {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 2px;
 }
 
-
-/* ===================================== */
-
-
-/* ===== THE INTERESTING STUFF NOW ===== */
-
-
-/* ===================================== */
-
-.navbar {
-    border: none;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    /* --- navbar sizes --- */
-    /* --- navbar colors --- */
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+  background: gold;
 }
-
-.navbar-brand {
-    font-size: 2.25rem;
-    font-weight: 900;
-    color: rgb(0, 102, 204);
+.big-logo-row .big-logo-container {
+  padding-top: 50px;
 }
-
-.navbar--size--xl {
-    padding: 4rem 0;
+.big-logo-row h1 {
+  font-size: 4em;
+  margin: 0;
+  padding: 0 0 15px 0;
 }
-
-.navbar--size--lg {
-    padding: 2rem 0;
+@media (min-width: 400px) {
+  .big-logo-row h1 {
+    font-size: 4.5em;
+  }
 }
-
-.navbar--size--md {
-    padding: 1rem 0;
+@media (min-width: 440px) {
+  .big-logo-row h1 {
+    font-size: 5.5em;
+  }
 }
-
-.navbar--size--sm {
-    padding: 0;
+@media (min-width: 500px) {
+  .big-logo-row h1 {
+    font-size: 6.5em;
+  }
 }
-
-.navbar--color--white {
-    background: #fff;
+@media (min-width: 630px) {
+  .big-logo-row h1 {
+    font-size: 7.5em;
+  }
 }
-
-.navbar--color--primary {
-    background: #37ca7e;
+@media (min-width: 768px) {
+  .big-logo-row h1 {
+    font-size: 9em;
+    padding-bottom: 30px;
+  }
 }
-
-.navbar--color--secondary {
-    background: #ededed;
-}
-
-.navbar--color--ghost {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.navbar--color--ghost .navbar-brand,
-.navbar--color--ghost .navbar-text,
-.navbar--color--ghost a {
-    color: #fff;
+@media (min-width: 1200px) {
+  .big-logo-row h1 {
+    font-size: 12em;
+  }
 }

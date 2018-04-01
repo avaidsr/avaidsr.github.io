@@ -1,57 +1,36 @@
-// grabbing the class names from the data attributes
-var navBar = $('.navbar'),
-    data = navBar.data();
+var navbarHeight = $('.navbar').height(); 
 
-// booleans used to tame the scroll event listening a little..
-var scrolling = false,
-    scrolledPast = false;
-
-// transition Into
-function switchInto() {
-  // update `scrolledPast` bool
-  scrolledPast = true;
-  // add/remove CSS classes
-  navBar.removeClass(data.startcolor);
-  navBar.removeClass(data.startsize);
-  navBar.addClass(data.intocolor);
-  navBar.addClass(data.intosize);
-  console.log('into transition triggered!');
-};
-
-// transition Start
-function switchStart() {
-  // update `scrolledPast` bool
-  scrolledPast = false;
-  // add/remove CSS classes
-  navBar.addClass(data.startcolor);
-  navBar.addClass(data.startsize);
-  navBar.removeClass(data.intocolor);
-  navBar.removeClass(data.intosize);
-  console.log('start transition triggered!');
-}
-
-// set `scrolling` to true when user scrolls
-$(window).scroll(function () {
-  return scrolling = true;
-});
-
-setInterval(function () {
-  // when `scrolling` becomes true... 
-  if (scrolling) {
-    // set it back to false
-    scrolling = false;
-    // check scroll position
-    if ($(window).scrollTop() > 100) {
-      // user has scrolled > 100px from top since last check
-      if (!scrolledPast) {
-        switchInto();
-      }
-    } else {
-      // user has scrolled back <= 100px from top since last check
-      if (scrolledPast) {
-        switchStart();
-      }
-    }
+$(window).scroll(function() {
+  var navbarColor = "62,195,246";//color attr for rgba
+  var smallLogoHeight = $('.small-logo').height();
+  var bigLogoHeight = $('.big-logo').height();
+  
+  
+  var smallLogoEndPos = 0;
+  var smallSpeed = (smallLogoHeight / bigLogoHeight);
+  
+  var ySmall = ($(window).scrollTop() * smallSpeed); 
+  
+  var smallPadding = navbarHeight - ySmall;
+  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
+  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
+  if (smallPadding < 0) { smallPadding = 0; }
+  
+  $('.small-logo-container ').css({ "padding-top": smallPadding});
+  
+  var navOpacity = ySmall / smallLogoHeight; 
+  if  (navOpacity > 1) { navOpacity = 1; }
+  if (navOpacity < 0 ) { navOpacity = 0; }
+  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
+  $('.navbar').css({"background-color": navBackColor});
+  
+  var shadowOpacity = navOpacity * 0.4;
+  if ( ySmall > 1) {
+    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
+  } else {
+    $('.navbar').css({"box-shadow": "none"});
   }
-  // take a breath.. hold event listener from firing for 100ms
-}, 100);
+  
+  
+  
+});
