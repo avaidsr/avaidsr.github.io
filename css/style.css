@@ -44,7 +44,7 @@ a {
 
 .header__logo {
     font-size: 25px;
-    font-weight: 700;
+    /* font-weight: 700; */
     padding: 0 25px;
     float: left;
 }
@@ -53,7 +53,7 @@ a {
 /* MENU */
 
 .menu {
-    float: left;
+    float: right;
 }
 
 .menu a {
@@ -101,6 +101,7 @@ a {
         width: 50px;
         height: 66px;
         cursor: pointer;
+        background-color: rgb(0,102,204);
     }
     .header__icon:after {
         content: '';
@@ -118,7 +119,7 @@ a {
         left: 0;
         top: 0;
         bottom: 0;
-        background-color: #fff;
+        background-color: rgb(0,102,204);
         /*    overflow-y: scroll;
         -webkit-overflow-scrolling: touch;*/
         width: 250px;
