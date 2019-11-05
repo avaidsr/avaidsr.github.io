@@ -74,7 +74,7 @@
     vertical-align: baseline;
     position: relative;
     line-height: 1.4;
-    font-size: 1.25em;
+    font-size: 18px;
     padding: 0;
     margin: .5em auto;
     text-align: center;
@@ -136,7 +136,7 @@
         width: 80%;
     }
     .tag-line {
-        font-size: 1em;
+        font-size: 14.4px;
     }
 }
 
