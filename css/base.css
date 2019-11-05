@@ -167,6 +167,30 @@
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
+.s5-b {
+    margin-top: 28px;
+    padding: 17px 24px 15px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 100%;
+    color: #fff !important;
+    background: #365374 !important;
+    border-color: #365374;
+    border-width: 1px;
+    font-size: 21px;
+    display: inline-block;
+    border-radius: 4px;
+    z-index: 10;
+    -webkit-transition: background-color .15s ease-out;
+    -moz-transition: background-color .15s ease-out;
+    -o-transition: background-color .15s ease-out;
+    transition: background-color .15s ease-out;
+}
+
+.s5-b:hover {
+    background: #3A6288 !important;
+}
+
 .s2-foot-image {
     overflow: hidden;
     position: absolute;
