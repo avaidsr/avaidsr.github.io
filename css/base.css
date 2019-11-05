@@ -1,0 +1,161 @@
+#index-banner {
+    background-color: #F7F7F7;
+    min-height: 100vh;
+    min-width: 98vw;
+}
+
+.top-section {
+    height: 22vh;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+#section-2 {
+    background-color: #58b792;
+    min-height: 100vh;
+    min-width: 98vw;
+}
+
+.logo_search {
+    /* width: 98vw; */
+    /* height: 45vh; */
+    position: relative;
+    padding: 0 7px;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_logo {
+    position: relative;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: .8em;
+    margin-top: -1.25em;
+}
+
+.m-logo {
+    width: 205px;
+    height: 200px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('../images/main_logo.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: transparent;
+    text-indent: -9999px;
+    font-size: 0px;
+}
+
+.form-class {
+    font-size: 1.14em;
+    /* padding-right: 3.5em; */
+}
+
+.search_wrapper {
+    padding: 1.3em .8em 1em;
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+    width: 70%;
+}
+
+.tag-line {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    position: relative;
+    line-height: 1.4;
+    font-size: 1.25em;
+    padding: 0;
+    margin: .5em auto;
+    text-align: center;
+    color: #9a9a9a;
+}
+
+
+/* Style the input container */
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+/* Style the form icons */
+
+.icon {
+    padding: 10px;
+    background: white;
+    color: gray;
+    min-width: 50px;
+    text-align: center;
+}
+
+
+/* Style the input fields */
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 590px) {
+    .search_wrapper {
+        width: 80%;
+    }
+    .tag-line {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .m-logo {
+        width: 166px;
+        height: 134px;
+    }
+    .main_logo {
+        margin-bottom: 1.25em;
+        margin-top: 0;
+    }
+    .search_wrapper {
+        width: auto;
+    }
+    .hidden-text {
+        display: none;
+    }
+}
+
+
+/* ----------------- */
