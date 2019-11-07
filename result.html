@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/result.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootsrap/bootstrap-grid.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootsrap/bootstrap-reboot.min.css"> -->
+    <link rel="stylesheet" href="css/bootsrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+    <title>
+        web development at DuckDuckGo
+    </title>
+</head>
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/bootstrap/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="js/bootstrap/bootstrap.min.js"></script> -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <div class="site-wrapper" style="min-height: 648px;">
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="nav-search-wrap">
+                    <a href="index.html" class="nav-logo" style="left: 0px;height: 44px;">
+                        <span class="nav-logo-img">DuckDuckGo</span>
+                    </a>
+                    <div class="nav-search">
+                        <form id="search_form" class="search--adv  search--header" name="x"><input type="text" name="q" tabindex="1" autocomplete="off" class="search__input--adv" value="web development" autocapitalize="off" autocorrect="off"><input id="search_form_input_clear" class="search__clear" type="button" tabindex="3"
+                                value="X"><input id="search_button" class="search__button  js-search-button" type="submit" tabindex="2" value="S"></div>
+                    <a id="search_dropdown" class="search__dropdown" href="javascript:;" tabindex="4"></a>
+                    <div id="search_elements_hidden" class="search__hidden  js-search-hidden"><input type="hidden" class="js-search-hidden-field" name="t" value="h_"></div>
+                    <div class="search__autocomplete" style="position: absolute; display: none;">
+                        <div class="acp-wrap js-acp-wrap"></div>
+                        <div class="acp-footer is-hidden js-acp-footer"><span class="acp-footer__instructions">Shortcuts to other sites to search off DuckDuckGo</span><span class="acp-footer__link"><a class="no-visited js-acp-footer-link" href="/bang">Learn More</a></span></div>
+                    </div>
+                    </form>
+                </div>
+                <br>
+                <div class="option-bar">
+                    <div class="option-list">
+                        <ul class="static-list">
+                            <li class="list-item"><a class="link link-active">Web</a></li>
+                            <li class="list-item"><a class="link">Images</a></li>
+                            <li class="list-item f4th-hide"><a class="link">Videos</a></li>
+                            <li class="list-item t3rd-hide"><a class="link">News</a></li>
+                            <li class="list-item s2nd-hide"><a class="link">Maps</a></li>
+                            <li class="list-item f1st-hide"><a class="link" style="color: #0000006b;">|</a></li>
+                            <li class="list-item f1st-hide"><a class="link">About</a></li>
+                        </ul>
+                        <ul class="drop">
+                            <!-- <li class="settings"> -->
+                            <div class="dropdown">
+                                <div class="d">
+                                    <button style="background-color: #fafafa;color: black;border-width: 0;font-weight:600;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Settings
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="link-wrap">
+                <div class="results-main">
+                    <div class="search-filters-wrap">
+                        <div class="search-filters">
+                            <div class="toggle-drop">
+                                <div class="toggle">
+                                    <span class="knob"></span>
+                                </div>
+                                <!-- <a class="dropdown__button dropdown__button js-dropdown-button">India</a> -->
+                                <div class="dropdown-2">
+                                    <div class="d-2">
+                                        <button style="background-color: #ffffff;
+                                    color: #666;
+                                    border-width: 0;
+                                    font-weight: 400;
+                                    font-size: 14.4px;
+                                    padding-left: 0px;
+                                    padding-top: 0px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          India
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------------------- -->
+
+                            <div class="dropdown  dropdown--safe-search "><a href="#" class="dropdown__button js-dropdown-button">Safe Search: Moderate</a>
+                                <div class="dropdown-3">
+                                    <div class="d-3">
+                                        <button style="background-color: black;
+                                color: black;
+                                border-width: 0;
+                                " class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Safe Search: Moderate
+                                    </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search filters -->
+                    <div class="quick-content">
+                        <div class="content-module">
+                            <div class="module-inner">
+                                <div class="module-item">
+                                    <div class="module-title">
+                                        <span class="module__title__link">Web development</span>
+                                    </div>
+                                    <div class="module-text">
+                                        <span class="js-about-item-abstr">Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.</span>
+                                        <a href="https://en.wikipedia.org/wiki/Web_development" class="module__more-at js-about-item-more-at-inline tx--bold">Wikipedia</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="module__toggle js-about-module-toggle" style="display: block;">
+                                <div class="module__toggle--more js-about-module-more"><span class="module__toggle__chevron">v</span></div>
+                                <div class="module__toggle--less js-about-module-less" style="display: none;"><span class="module__toggle__chevron module__toggle__chevron--collapse">v</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------- -->
+
+                    <div id="organic-module">
+                        <div class="module module--carousel js-module--news">
+                            <div class="module--carousel__left js-carousel-module-left ddgsi ddgsi-left is-hidden"></div>
+                            <div class="module--carousel__right js-carousel-module-right ddgsi ddgsi-right"></div>
+                            <div class="js-carousel-module-title module__header module__header--link">Recent News</div>
+                            <div class="module--carousel__items js-carousel-module-items">
+                                <div class="module--carousel__item has-image" data-link="https://www.wsj.com/articles/google-sends-travel-website-stocks-on-bad-trip-11573147898">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news" style="display: none;"></div>
+                                        <div class="module--carousel__image" style="background-image:url(images/trip.png)"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://www.wsj.com/articles/google-sends-travel-website-stocks-on-bad-trip-11573147898" class="module--carousel__body__title js-carousel-item-title">Google Sends Travel Website Stocks on Bad Trip</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="images/www.wsj.com.ico"><span class="module--carousel__source result__url">The Wall Street...</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">2h</span></div>
+                                </div>
+                                <div class="module--carousel__item has-image is-highlighted" data-link="https://www.pcmag.com/news/371814/googles-cardboard-vr-platform-is-now-open-source">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news" style="display: none;"></div>
+                                        <div class="module--carousel__image" style="background-image:url(images/vr.png)"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://www.pcmag.com/news/371814/googles-cardboard-vr-platform-is-now-open-source" class="module--carousel__body__title js-carousel-item-title">Google's Cardboard VR Platform Is Now Open Source</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="images/www.pcmag.com.ico"><span class="module--carousel__source result__url">PC Magazine</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">8h</span></div>
+                                </div>
+                                <div class="module--carousel__item " data-link="https://venturebeat.com/2019/11/07/google-teachable-machine-2-ai-machine-learning/">
+                                    <div class="module--carousel__body"><a href="https://venturebeat.com/2019/11/07/google-teachable-machine-2-ai-machine-learning/" class="module--carousel__body__title js-carousel-item-title">Google's Teachable Machine 2.0 elucidates the basics of machine learning</a>
+                                        <div class="module--carousel__body__content js-carousel-item-content">Two years ago, <b>Google</b> launched Teachable Machine, a web experiment intended to elucidate machine learn…</div>
+                                    </div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="images/venturebeat.com.ico"><span class="module--carousel__source result__url">VentureBeat</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">3h</span></div>
+                                </div>
+                                <div class="module--carousel__item " data-link="http://www.zdnet.com/article/google-launches-open-source-project-for-cardboard-vr-viewer/">
+                                    <div class="module--carousel__body"><a href="http://www.zdnet.com/article/google-launches-open-source-project-for-cardboard-vr-viewer/" class="module--carousel__body__title js-carousel-item-title">Google launches open-source project for Cardboard VR viewer | ZDNet</a>
+                                        <div class="module--carousel__body__content js-carousel-item-content"><b>Google</b> has released an open source project for its <b>Google</b> Cardboard to allow developers to build additional experiences …</div>
+                                    </div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="images/www.zdnet.com.ico"><span class="module--carousel__source result__url">ZDNet</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">9h</span></div>
+                                </div>
+                                <div class="module--carousel__item has-image" data-link="https://www.thestreet.com/technology/google-reportedly-pondering-changes-to-political-ad-policy-15157627">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news" style="display: none;"></div>
+                                        <div class="module--carousel__image" style="background-image:url(//external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fs.thestreet.com%2Ffiles%2Ftsc%2Fv2008%2Fphotos%2Fcontrib%2Fuploads%2F44f5e4a9-9f56-11e9-9fed-0d79de0869ec.png&amp;f=1&amp;h=120)"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://www.thestreet.com/technology/google-reportedly-pondering-changes-to-political-ad-policy-15157627" class="module--carousel__body__title js-carousel-item-title">Google Reportedly Pondering Changes to Political Ad Policy</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="images/www.thestreet.com.ico"><span class="module--carousel__source result__url">TheStreet.com</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">8h</span></div>
+                                </div>
+                                <div class="module--carousel__item has-image" data-link="https://www.bbc.com/news/business-50327417?SThisFB">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news" style="display: none;"></div>
+                                        <div class="module--carousel__image" style="background-image:url(//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fichef.bbci.co.uk%2Fnews%2F1024%2Fbranded_news%2FA983%2Fproduction%2F_109559334_googlewalkout.jpg&amp;f=1&amp;h=120)"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://www.bbc.com/news/business-50327417?SThisFB" class="module--carousel__body__title js-carousel-item-title">Google owner probes handling of harassment claims</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/www.bbc.com.ico"><span class="module--carousel__source result__url">BBC News</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">16h</span></div>
+                                </div>
+                                <div class="module--carousel__item " data-link="https://www.foxbusiness.com/markets/google-political-advertisement-policy-changes">
+                                    <div class="module--carousel__body"><a href="https://www.foxbusiness.com/markets/google-political-advertisement-policy-changes" class="module--carousel__body__title js-carousel-item-title">Google considering political ad policy changes: Report</a>
+                                        <div class="module--carousel__body__content js-carousel-item-content"><b>Google</b> parent Alphabet is mulling changes to its policy on political advertisements, days after fellow tech giants Twitte…</div>
+                                    </div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/www.foxbusiness.com.ico"><span class="module--carousel__source result__url">FOX Business</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">18h</span></div>
+                                </div>
+                                <div class="module--carousel__item " data-link="https://www.bloomberg.com/news/articles/2019-11-07/google-considers-changing-its-political-advertising-policy?srnd=politics-vp">
+                                    <div class="module--carousel__body"><a href="https://www.bloomberg.com/news/articles/2019-11-07/google-considers-changing-its-political-advertising-policy?srnd=politics-vp" class="module--carousel__body__title js-carousel-item-title">Google Considers Changing Its Political Advertising Policy</a>
+                                        <div class="module--carousel__body__content js-carousel-item-content">Managers at <b>Google</b> are considering changing policies on political advertising in the midst of a raging public debate …</div>
+                                    </div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/www.bloomberg.com.ico"><span class="module--carousel__source result__url">Bloomberg</span></span>
+                                        <span class="sep  tile__sep"></span><span class="tile__time">19h</span></div>
+                                </div>
+                                <div class="module--carousel__item has-image" data-link="https://thehill.com/policy/technology/technology/469383-google-considers-changes-to-political-ad-policy-report">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://thehill.com/policy/technology/technology/469383-google-considers-changes-to-political-ad-policy-report" class="module--carousel__body__title js-carousel-item-title">Google considers changes to political ad policy: report</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/thehill.com.ico"><span class="module--carousel__source result__url">The Hill</span></span>
+                                        <span class="sep  tile__sep"></span>
+                                        <span class="tile__time">5h</span>
+                                    </div>
+                                </div>
+                                <div class="module--carousel__item has-image" data-link="https://www.forbes.com/sites/beasleydavid/2019/11/07/googleads/">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://www.forbes.com/sites/beasleydavid/2019/11/07/googleads/" class="module--carousel__body__title js-carousel-item-title">Google May Change Political Ad Policy</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/www.forbes.com.ico"><span class="module--carousel__source result__url">Forbes</span></span>
+                                        <span class="sep  tile__sep"></span>
+                                        <span class="tile__time">15h</span>
+                                    </div>
+                                </div>
+                                <div class="module--carousel__item has-image" data-link="https://www.msn.com/en-us/money/companies/google-protests-news-corp-microsoft-ties-in-texas-probe/ar-AAJETWH?ocid=00000000">
+                                    <div class="module--carousel__image-wrapper js-carousel-item-image-wrapper">
+                                        <div class="module--carousel__placeholder js-carousel-item-img-placeholder ddgsi ddgsi-news"></div>
+                                    </div>
+                                    <div class="module--carousel__body"><a href="https://www.msn.com/en-us/money/companies/google-protests-news-corp-microsoft-ties-in-texas-probe/ar-AAJETWH?ocid=00000000" class="module--carousel__body__title js-carousel-item-title">Google Protests News Corp., Microsoft Ties in Texas Probe</a></div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/www.msn.com.ico"><span class="module--carousel__source result__url">MSN News</span></span>
+                                        <span class="sep  tile__sep"></span>
+                                        <span class="tile__time">10h</span>
+                                    </div>
+                                </div>
+                                <div class="module--carousel__item " data-link="https://news.yahoo.com/2019-11-07-google-nest-wifi-review.html">
+                                    <div class="module--carousel__body"><a href="https://news.yahoo.com/2019-11-07-google-nest-wifi-review.html" class="module--carousel__body__title js-carousel-item-title">Google Nest WiFi review: A solid mesh network with built-in Assistant</a>
+                                        <div class="module--carousel__body__content js-carousel-item-content"><b>Google's</b> been trying to make the perfect WiFi gear for nearly five years, and Nest WiFi is its third-generation attempt at it…</div>
+                                    </div>
+                                    <div class="module--carousel__footer has-relative-time"><span class="module--carousel__more-at"><img width="16" height="16" class="zci__more-at__icon" src="//external-content.duckduckgo.com/ip3/news.yahoo.com.ico"><span class="module--carousel__source result__url">Engadget</span></span>
+                                        <span class="sep  tile__sep"></span>
+                                        <span class="tile__time">6h</span>
+                                    </div>
+                                </div>
+                            </div><a href="#" class="js-carousel-module-more module__footer">More News</a>
+                            <p class="feedback-prompt">Are these links helpful?<a href="#" class="feedback-prompt__link js-feedback-prompt-yes">Yes</a><a href="#" class="feedback-prompt__link js-feedback-prompt-no">No</a></p>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------------- -->
+                    <div id="links" class="results js-results">
+                        <div id="r1-0" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="en.m.wikipedia.org" data-hostname="en.m.wikipedia.org" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://en.m.wikipedia.org/wiki/Web_development"><b>Web</b> <b>development</b> - Wikipedia</a>
+                                    <a rel="noopener" class="result__check" href="https://en.m.wikipedia.org/wiki/Web_development"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a>
+                                </h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:en.m.wikipedia.org&amp;t=h_" title="Search domain en.m.wikipedia.org/wiki/Web_development" class="js-result-extras-site_search"><img data-src="images/wikipedia.3x.png" height="16" width="16" title="Search domain en.m.wikipedia.org/wiki/Web_development" class="result__icon__img js-lazyload-icons" src="images/wikipedia.3x.png"></a></span>
+                                        <a href="https://en.m.wikipedia.org/wiki/Web_development" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://en.m.wikipedia.org</span><span class="result__url__full">/wiki/Web_development</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet"><b>Web</b> <b>development</b> is the work involved in developing a <b>web</b> site for the Internet (World Wide <b>Web</b>) or an intranet (a private network). <b>Web</b> <b>development</b> can range from developing a simple
+                                    single static page of plain text to complex <b>web</b>-based internet applications (<b>web</b> apps), electronic businesses, and social network services.</div>
+                            </div>
+                        </div>
+                        <div id="organic-module"></div>
+                        <div id="r1-1" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="www.w3schools.com" data-hostname="www.w3schools.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://www.w3schools.com/whatis/"><b>Web</b> <b>Development</b></a><a rel="noopener" class="result__check" href="https://www.w3schools.com/whatis/"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a></h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:www.w3schools.com&amp;t=h_" title="Search domain www.w3schools.com/whatis/" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/www.w3schools.com.ico" height="16" width="16" title="Search domain www.w3schools.com/whatis/" class="result__icon__img js-lazyload-icons" src="images/www.w3schools.com.ico"></a></span>
+                                        <a href="https://www.w3schools.com/whatis/" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://www.w3schools.com</span><span class="result__url__full">/whatis/</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet">Every <b>Web</b> Developer must have a basic understanding of HTML, CSS, and JavaScript. Responsive <b>Web</b> Design is used in all types of modern <b>web</b> <b>development</b>. ECMAScript 5 (JavaScript 5) is supported
+                                    in all modern browsers. Take a good look at it, especially the new array functions.</div>
+                            </div>
+                        </div>
+                        <div id="r1-2" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="www.bls.gov" data-hostname="www.bls.gov" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm"><b>Web</b> Developers : Occupational Outlook Handbook: : U.S. Bureau ...</a><a rel="noopener" class="result__check"
+                                        href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a></h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:www.bls.gov&amp;t=h_" title="Search domain www.bls.gov/ooh/computer-and-information-technology/web-developers.htm" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/www.bls.gov.ico" height="16" width="16" title="Search domain www.bls.gov/ooh/computer-and-information-technology/web-developers.htm" class="result__icon__img js-lazyload-icons" src="images/www.bls.gov.ico"></a></span>
+                                        <a href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://www.bls.gov</span><span class="result__url__full">/ooh/computer-and-information-technology/web-developers.htm</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet"><b>Web</b> developers design and create websites. They are responsible for the look of the site. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a
+                                    website's speed and how much traffic the site can handle.</div>
+                            </div>
+                        </div>
+                        <div id="r1-3" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="www.udemy.com" data-hostname="www.udemy.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://www.udemy.com/courses/development/web-development/"><b>Web</b> <b>Development</b> Courses - Udemy</a>
+                                    <a rel="noopener" class="result__check" href="https://www.udemy.com/courses/development/web-development/"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a>
+                                </h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:www.udemy.com&amp;t=h_" title="Search domain www.udemy.com/courses/development/web-development/" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/www.udemy.com.ico" height="16" width="16" title="Search domain www.udemy.com/courses/development/web-development/" class="result__icon__img js-lazyload-icons" src="images/www.udemy.com.ico"></a></span>
+                                        <a href="https://www.udemy.com/courses/development/web-development/" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://www.udemy.com</span><span class="result__url__full">/courses/development/web-development/</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet"><b>Web</b> <b>Development</b> Mobile Apps Programming Languages Game <b>Development</b> Databases Software Testing Software Engineering <b>Development</b> Tools E-Commerce Business Finance Entrepreneurship Communications
+                                    Management Sales Strategy Operations Project Management Business Law Data &amp; Analytics Home Business Human Resources Industry Media Real Estate Other</div>
+                            </div>
+                        </div>
+                        <div id="r1-4" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="www.codecademy.com" data-hostname="www.codecademy.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://www.codecademy.com/learn/paths/web-development">Learn <b>Web</b> <b>Development</b> - Kick-Start Your Career | Codecademy</a>
+                                    <a rel="noopener" class="result__check" href="https://www.codecademy.com/learn/paths/web-development"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a>
+                                </h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:www.codecademy.com&amp;t=h_" title="Search domain www.codecademy.com/learn/paths/web-development" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/www.codecademy.com.ico" height="16" width="16" title="Search domain www.codecademy.com/learn/paths/web-development" class="result__icon__img js-lazyload-icons" src="images/www.codecademy.com.ico"></a></span>
+                                        <a href="https://www.codecademy.com/learn/paths/web-development" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://www.codecademy.com</span><span class="result__url__full">/learn/paths/web-development</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet">Become a <b>web</b> developer. Go from no-code to an in-demand junior <b>web</b> developer, at a fraction of the cost of a bootcamp. Start with the front-end by learning HTML, CSS, and JavaScript. Then, master the back-end
+                                    and APIs to round out your full-stack skills.</div>
+                            </div>
+                        </div>
+                        <div id="r1-5" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="www.techopedia.com" data-hostname="www.techopedia.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://www.techopedia.com/definition/23889/web-development">What is <b>Web</b> <b>Development</b>? - Definition from Techopedia</a>
+                                    <a rel="noopener" class="result__check" href="https://www.techopedia.com/definition/23889/web-development"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a>
+                                </h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:www.techopedia.com&amp;t=h_" title="Search domain www.techopedia.com/definition/23889/web-development" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/www.techopedia.com.ico" height="16" width="16" title="Search domain www.techopedia.com/definition/23889/web-development" class="result__icon__img js-lazyload-icons" src="images/www.techopedia.com.ico"></a></span>
+                                        <a href="https://www.techopedia.com/definition/23889/web-development" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://www.techopedia.com</span><span class="result__url__full">/definition/23889/web-development</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet"><b>Web</b> <b>development</b> broadly refers to the tasks associated with developing websites for hosting via intranet or internet. The <b>web</b> <b>development</b> process includes <b>web</b> design ...</div>
+                            </div>
+                        </div>
+                        <div id="r1-6" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="careerfoundry.com" data-hostname="careerfoundry.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://careerfoundry.com/en/blog/web-development/what-is-the-difference-between-a-web-developer-and-a-web-designer/">The Difference Between A <b>Web</b> Designer And A <b>Web</b> Developer ...</a>
+                                    <a rel="noopener" class="result__check" href="https://careerfoundry.com/en/blog/web-development/what-is-the-difference-between-a-web-developer-and-a-web-designer/"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a>
+                                </h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:careerfoundry.com&amp;t=h_" title="Search domain careerfoundry.com/en/blog/web-development/what-is-the-difference-between-a-web-developer-and-a-web-designer/" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/careerfoundry.com.ico" height="16" width="16" title="Search domain careerfoundry.com/en/blog/web-development/what-is-the-difference-between-a-web-developer-and-a-web-designer/" class="result__icon__img js-lazyload-icons" src="images/careerfoundry.com.ico"></a></span>
+                                        <a href="https://careerfoundry.com/en/blog/web-development/what-is-the-difference-between-a-web-developer-and-a-web-designer/" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://careerfoundry.com</span><span class="result__url__full">/en/blog/web-development/what-is-the-difference-between-a-web-developer-and-a-web-designer/</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet">Do <b>web</b> developers and designers need to be more right-brained or left-brained? <b>Web</b> <b>development</b> or <b>web</b> design: Which career is for you? 1. Definitions Of A <b>Web</b> Developer And A <b>Web</b>                                    Designer. Let's start off by framing the comparison through something we all know by imagining a <b>web</b> developer and a <b>web</b> designer getting together to build a car.</div>
+                            </div>
+                        </div>
+                        <div id="r1-7" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="www.thebalancecareers.com" data-hostname="www.thebalancecareers.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://www.thebalancecareers.com/web-developer-job-description-salary-and-skills-2061841"><b>Web</b> Developer Job Description: Salary, Skills, &amp; More</a><a rel="noopener"
+                                        class="result__check" href="https://www.thebalancecareers.com/web-developer-job-description-salary-and-skills-2061841"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a></h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:www.thebalancecareers.com&amp;t=h_" title="Search domain www.thebalancecareers.com/web-developer-job-description-salary-and-skills-2061841" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/www.thebalancecareers.com.ico" height="16" width="16" title="Search domain www.thebalancecareers.com/web-developer-job-description-salary-and-skills-2061841" class="result__icon__img js-lazyload-icons" src="images/www.thebalancecareers.com.ico"></a></span>
+                                        <a href="https://www.thebalancecareers.com/web-developer-job-description-salary-and-skills-2061841" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://www.thebalancecareers.com</span><span class="result__url__full">/web-developer-job-description-salary-and-skills-2061841</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet"><b>Web</b> developers need a combination of graphic design skills and technical computer skills that will allow them to create particular designs on <b>web</b> pages. In addition to looking nice, websites need to be functional
+                                    and secure. It is the responsibility of <b>web</b> developers to create such sites that meet the requirements of employers or clients.</div>
+                            </div>
+                        </div>
+                        <div id="r1-8" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="money.usnews.com" data-hostname="money.usnews.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://money.usnews.com/careers/best-jobs/web-developer"><b>Web</b> Developer - Career Rankings, Salary, Reviews and Advice ...</a>
+                                    <a rel="noopener" class="result__check" href="https://money.usnews.com/careers/best-jobs/web-developer"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a>
+                                </h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:money.usnews.com&amp;t=h_" title="Search domain money.usnews.com/careers/best-jobs/web-developer" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/money.usnews.com.ico" height="16" width="16" title="Search domain money.usnews.com/careers/best-jobs/web-developer" class="result__icon__img js-lazyload-icons" src="images/money.usnews.com.ico"></a></span>
+                                        <a href="https://money.usnews.com/careers/best-jobs/web-developer" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://money.usnews.com</span><span class="result__url__full">/careers/best-jobs/web-developer</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet">Find out more about the average <b>web</b> developer salary and learn where the best-paying metropolitan areas are for a <b>web</b> developer across the country.</div>
+                            </div>
+                        </div>
+                        <div id="r1-9" class="result results_links_deep highlight_d result--url-above-snippet" data-domain="developers.google.com" data-hostname="developers.google.com" data-nir="1">
+                            <div class="result__body links_main links_deep">
+                                <h2 class="result__title"><a class="result__a" rel="noopener" href="https://developers.google.com/web/"><b>Web</b> | Google Developers</a><a rel="noopener" class="result__check" href="https://developers.google.com/web/"><span class="result__check__tt">Your browser indicates if you've visited this link</span></a></h2>
+                                <div class="result__extras js-result-extras">
+                                    <div class="result__extras__url"><span class="result__icon "><a href="/?q=web%20development+site:developers.google.com&amp;t=h_" title="Search domain developers.google.com/web/" class="js-result-extras-site_search"><img data-src="//external-content.duckduckgo.com/ip3/developers.google.com.ico" height="16" width="16" title="Search domain developers.google.com/web/" class="result__icon__img js-lazyload-icons" src="images/developers.google.com.ico"></a></span>
+                                        <a href="https://developers.google.com/web/" rel="noopener" class="result__url js-result-extras-url"><span class="result__url__domain">https://developers.google.com</span><span class="result__url__full">/web/</span></a>
+                                    </div>
+                                </div>
+                                <div class="result__snippet js-result-snippet"><b>Web</b> Fundamentals. Tutorials, guides, and best practices for building the next generation of <b>web</b> experiences. Get started</div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="results--sidebar js-results-sidebar">
+                    <div class="sidebar-modules js-sidebar-modules">
+                        <div class="module module--about module--zci-wikipedia_fathead js-module--wikipedia_fathead js-about-module has-content-height">
+                            <div class="module__content js-about-module-content">
+                                <div class="module__body js-about-item">
+                                    <a class="module__image" href="https://en.wikipedia.org/wiki/Google" title="More at Wikipedia "><img src="https://duckduckgo.com/i/0227507d.png" align="right" class="module--about__img"></a>
+                                    <div class="module__title js-about-item-title"><span class="module__title__link">Google</span></div><a href="https://www.google.com/" class="module__official-url js-about-item-link">google.com</a>
+                                    <div class="module__text"><span class="js-about-item-abstr">Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware. It is considered one of the Big Four technology companies, alongside Amazon, Apple, and Facebook.</span>
+                                        <a href="https://en.wikipedia.org/wiki/Google" class="module__more-at js-about-item-more-at-inline tx--bold">Wikipedia</a>
+                                        <a href="https://en.wikipedia.org/wiki/Google" class="module__more-at-bottom is-hidden js-about-item-more-at-bottom"><img width="16" height="16" class="zci__more-at__icon" src="/assets/icons/favicons/wikipedia.2x.png">More at Wikipedia </a>
+                                    </div>
+                                    <div class="about-info-box">
+                                        <div class="about-info-box__info-row"><span class="about-info-box__info-label">Formerly called:</span><span class="about-info-box__info-value">Google Inc. (1998–2017)</span></div>
+                                        <div class="about-info-box__info-row"><span class="about-info-box__info-label">Type:</span><span class="about-info-box__info-value">Subsidiary</span></div>
+                                        <div class="about-info-box__info-row"><span class="about-info-box__info-label">Industry:</span><span class="about-info-box__info-value">Internet, Cloud computing, Computer software, Computer hardware, Artificial intelligence, Advertising</span></div>
+
+                                    </div>
+                                    <ul class="about-profiles">
+                                        <li class="about-profiles__item">
+                                            <a class="about-profiles__link module__link js-about-profile-link" href="https://www.google.com/" title="Website"><img class="about-profiles__img" src="images/website.svg">Website</a>
+                                        </li>
+                                        <li class="about-profiles__item">
+                                            <a class="about-profiles__link module__link js-about-profile-link" href="https://en.wikipedia.org/wiki/Google" title="Wikipedia"><img class="about-profiles__img" src="images/wikipedia.svg">Wikipedia</a>
+                                        </li>
+                                        <li class="about-profiles__item">
+                                            <a class="about-profiles__link module__link js-about-profile-link" href="https://twitter.com/Google" title="Twitter"><img class="about-profiles__img" src="images/twitter.svg">Twitter</a>
+                                        </li>
+                                        <li class="about-profiles__item">
+                                            <a class="about-profiles__link module__link js-about-profile-link" href="https://instagram.com/google" title="Instagram"><img class="about-profiles__img" src="images/instagram.svg">Instagram</a>
+                                        </li>
+                                        <li class="about-profiles__item">
+                                            <a class="about-profiles__link module__link js-about-profile-link" href="https://facebook.com/google" title="Facebook"><img class="about-profiles__img" src="images/facebook.svg">Facebook</a>
+                                        </li>
+                                        <li class="about-profiles__item">
+                                            <a class="about-profiles__link module__link js-about-profile-link" href="https://youtube.com/channel/UCK8sQmJBp8GCxrOtXWBpyEA" title="YouTube"><img class="about-profiles__img" src="images/youtube.svg">YouTube</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="module__toggle js-about-module-toggle" style="display: block;">
+                                <div class="module__toggle--more js-about-module-more"><span class="module__toggle__chevron">v</span></div>
+                                <div class="module__toggle--less js-about-module-less" style="display: none;"><span class="module__toggle__chevron module__toggle__chevron--collapse">v</span></div>
+                            </div>
+                            <p class="feedback-prompt" style="top: 508px;"><a href="#" class="feedback-prompt__link js-feedback-prompt-no">Feedback</a></p>
+                        </div>
+                    </div>
+                    <div class="js-sidebar-ads"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------- -->
+
+    <div class="footer--mobile" style="display: block;">
+        <p class="footer__text">We don't track you, but others do.</p>
+        <p class="footer__text">Learn how to protect your privacy.</p>
+        <div class="footer__links">
+            <a href="https://spreadprivacy.com" class="js-footer-link" data-id="bl"><img class="footer__social-icon" src="images/globe.svg" alt="" aria-hidden="true"></a>
+            <a href="https://twitter.com/duckduckgo" class="js-footer-link" data-id="tw"><img class="footer__social-icon" src="images/twr.svg" alt="" aria-hidden="true"></a>
+            <a href="https://reddit.com/r/duckduckgo" class="js-footer-link" data-id="rd"><img class="footer__social-icon" src="images/reddit.svg" alt="" aria-hidden="true"></a>
+            <a href="https://duckduckgo.com/newsletter" class="js-footer-link" data-id="nl"><img class="footer__social-icon" src="images/newsletter.svg" alt="" aria-hidden="true"></a>
+            <a href="https://duckduckgo.com/app" class="js-footer-link" data-id="ip"><img class="footer__social-icon" src="images/phone.svg" alt="" aria-hidden="true"></a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- ---------------- -->

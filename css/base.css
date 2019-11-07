@@ -321,5 +321,12 @@
     }
 }
 
+@media (max-height: 300px) and (max-width: 425px) {
+    .s2nd-banner-h1 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
 
 /* ----------------- */
