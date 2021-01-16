@@ -1,9 +1,34 @@
 .bg-main-color {
     background-color: #195e83 !important;
-  }
+}
   
-  a.bg-main-color:hover, a.bg-main-color:focus,
-  button.bg-main-color:hover,
-  button.bg-main-color:focus {
-    background-color: #117a8b !important;
-  }
+a.bg-main-color:hover, a.bg-main-color:focus,
+button.bg-main-color:hover,
+button.bg-main-color:focus {
+  background-color: #117a8b !important;
+}
+
+.jumbotron {
+  background-image: 
+  linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.829), 
+    rgba(0, 0, 0, 0.568)),
+  url("../img/banner/new/pexels-panumas-nikhomkhai-1148820.jpg");
+  background-size: cover;
+  /* filter: grayscale(100%); */
+}
+/* 
+
+pexels-field-engineer-442150.jpg
+pexels-flickr-157039.jpg
+pexels-johannes-plenio-1105379.jpg
+pexels-josh-sorenson-1054397.jpg
+pexels-maurício-mascaro-712786.jpg
+pexels-miguel-á-padriñán-343457.jpg
+pexels-panumas-nikhomkhai-1148820.jpg
+pexels-pixabay-158826.jpg
+pexels-pixabay-373543.jpg 
+
+*/
+
